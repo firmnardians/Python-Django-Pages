@@ -1,0 +1,137 @@
+{% extends 'head.html' %}
+
+{% block content%}
+
+
+<div class="jumbotron text-center">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 d-none d-md-block"  style="padding:0px;">
+                <img src="static/images/jnicswi9.png" width="100%" height="100%" alt="">
+            </div>
+            <div class="col-md-6 openbuk-right">
+                <h3>Hei teman baik.</h3>
+                <h2>
+                    <span>Openbuk</span> hadir untuk memudahkan pembelajaran bahasa pemrograman.
+                </h2>
+                <h5>Openbuk adalah sebuah aplikasi untuk media pembelajaran bahasa 
+                    pemrograman dengan materi-materi bahasa Indonesia, sehingga lebih 
+                    mudah di pahami dan di pelajari.</h5>
+
+                <a href="{% url 'about' %}">
+                <button class="btnOpenbuk">
+                Selengkapnya
+                </button>
+                </a>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="hero-openbuk">
+    <!-- Jangan lihat-lihat nanti naksir -->
+</div>
+
+<div class="container d-none d-md-block">
+    <div class="row">
+        
+        <div class="col-md-6">
+            <div class="tab">
+                <button class="tablinks" onclick="openCity(event, 'story')" id="defaultOpen">Testimoni</button>
+                <button class="tablinks" onclick="openCity(event, 'contact')">Contact</button>
+            </div>
+
+        <div class="myeditor">
+            <div class="closeedit">
+                
+            </div>
+            <div class="type">
+                <h3>Apa kelebihan Openbuk? </h3>
+                <h1>
+                <a href="" class="typewrite" data-period="2000" 
+                data-type='[ "Materi Bahasa Indonesia.", "Lebih mudah dipahami.", "Materi lengkap.", "Bisa bertanya dengan Guru." ]'>
+                    <span class="wrap"></span>
+                </a>
+                </h1>
+            </div>
+        </div>
+        
+    </div>
+
+        <div class="col-md-6">
+            <div id="story" class="tabcontent">
+                <h3>Testimoni</h3>
+                    <div class="banner-mobile">
+                        <div class="variable-width">
+
+                            <div class="slidex">"Terima kasih Openbuk, Tiga bulan belajar dari Openbuk, sekarang bisa bekerja sebagai Front End Developer."</div>
+                            <div class="slidex">"Bahasanya mudah di mengerti, semuanya bahasa Indonesia, jujur sangat membantu saya." </div>
+                            <div class="slidex">"Bangga bisa cobain aplikasi anak bangsa, Good job."</div>
+                            <div class="slidex">"Aplikasi yang Anda buat membawa kebahagiaan kepada pengguna masyarakat, terima kasih."</div>
+                            <div class="slidex">"Materi pembelajaran nya jelas dan mudah di mengerti, di ajarin dari yang mudah dulu hingga yang sulit."</div>
+                            <div class="slidex">"Faktor sulitnya mempelajari bahasa pemrograman adalah soal bahasanya, namun semua itu di pecahkan oleh Openbuk."</div>
+                        
+                        </div>
+                    </div>
+
+                    <div id="torso"></div>
+                    <div id="legs"></div>
+            </div>
+
+            <div id="contact" class="tabcontent">
+                <h3>Contact</h3>
+                <small>Berikan kami sebuah Feedback.</small> <br> <br>
+                <p>Email : <strong> openbuk.app@yandex.com</strong> <br>
+                CS : <strong> 081398907475</strong></p> 
+                <img src="static/images/email.png" width="100%" height="100%" alt="">
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="container d-block d-sm-none d-md-none">
+    <h3 style="text-align: center;border-bottom:3px solid #333;margin-left: 95px;margin-right: 95px;margin-top: 30px;">Testimoni</h3>
+    <div class="center">   
+        <div class="slide">"Terima kasih Openbuk, Tiga bulan belajar dari Openbuk, sekarang bisa bekerja sebagai Front End Developer."</div>
+        <div class="slide">"Bahasanya mudah di mengerti, semuanya bahasa Indonesia, jujur sangat membantu saya." </div>
+        <div class="slide">"Bangga bisa cobain aplikasi anak bangsa, Good job."</div>
+        <div class="slide">"Aplikasi yang Anda buat membawa kebahagiaan kepada pengguna masyarakat, terima kasih."</div>
+        <div class="slide">"Materi pembelajaran nya jelas dan mudah di mengerti, di ajarin dari yang mudah dulu hingga yang sulit."</div>
+        <div class="slide">"Faktor sulitnya mempelajari bahasa pemrograman adalah soal bahasanya, namun semua itu di pecahkan oleh Openbuk."</div>
+    </div>
+</div>
+
+    <div id="torso"></div>
+    <div id="legs"></div>
+
+<div class="myhero text-center">
+        <h2>Gunakan aplikasi <span>Openbuk</span> sekarang juga.</h2>
+        <h3 id="element"></h3>
+    <div class="godown">
+        <button class="btnOpenbuk">
+            Download
+        </button>
+    </div>
+</div>
+
+
+
+<div class="footer-openbuk">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <!-- Career -->
+            </div>
+            <div class="col">
+                <p>© 2018 OPENBUK</p> 
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock %}
